@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func sortArray(nums []int) []int {
-	pos := 0
-	nLen := len(nums)
-	nums[pos], nums[nLen-1] = nums[nLen-1], nums[pos]
-	quickSort(nums, 0, nLen-1)
-
-	return nums
-}
+// func sortArray(nums []int) []int {
+// 	pos := 0
+// 	nLen := len(nums)
+// 	nums[pos], nums[nLen-1] = nums[nLen-1], nums[pos]
+// 	quickSort(nums, 0, nLen-1)
+//
+// 	return nums
+// }
 
 func quickSort(nums []int, l int, r int) {
 	if l < r {
